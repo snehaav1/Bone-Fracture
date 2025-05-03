@@ -43,15 +43,24 @@ This project answers Can we predict the risk of a bone fracture based on age, al
 
 ## Results & Visuals
 
-### 🔹 Confusion Matrix
+After training the machine learning model with age, alcohol use, and calcium levels, we found that the model was really good at predicting people who did not have a bone fracture — it got those right almost every time. However, it did a poor job at identifying people who actually had fractures.
 
-This matrix shows that while the model performs well for "no fracture" predictions, it fails to identify actual fracture cases accurately.
+Out of 322 people who really had a fracture, the model only correctly predicted one of them. This means it missed almost every fracture case, which is a big problem. Even though the total accuracy was about 93%, that number is misleading — it's high only because the model guessed “no fracture” for almost everyone.
+
+When we looked at which features the model used most, age and calcium levels were the most important, while alcohol use mattered less. But overall, these three features were not enough to build a reliable prediction model.
+
+To make better predictions in the future, we should fix the problem of unbalanced data and add more health information — like bone scans, medication history, or past injuries — to help the model make smarter decisions.
+
+## Confusion Matrix
 
 ![Confusion Matrix](confusion_matrix.png)
 
-### 🔹 Feature Importance
+---
 
-This chart highlights that **age** and **calcium levels** are the most influential features in predicting bone fractures.
+###  Classification Report & Feature Importance
 
-![Feature Importance](feature_importance.png)
+Below is the classification report and a bar chart showing which features mattered most to the model. Age and calcium levels were most important, while alcohol had a much smaller impact.
 
+![Classification and Feature Importance](Screen%20Shot%202025-05-03%20at%202.54.08%20PM.png)
+
+---
