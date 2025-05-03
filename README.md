@@ -61,6 +61,6 @@ To make better predictions in the future, we should fix the problem of unbalance
 
 Below is the classification report and a bar chart showing which features mattered most to the model. Age and calcium levels were most important, while alcohol had a much smaller impact.
 
-![Classification and Feature Importance](Screen%20Shot%202025-05-03%20at%202.54.08%20PM.png)
+![Classification and Feature Importance](Screen Shot 2025-05-03 at 2.40.00 PM.png)
 
 ---
