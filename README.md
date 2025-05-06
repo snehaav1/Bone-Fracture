@@ -17,7 +17,6 @@ This project answers Can we predict the risk of a bone fracture based on age, al
 
 ##  Key Findings
 
-- **Accuracy**: ~93% overall
 - **Issue**: The model predicted non-fracture cases very well but **missed 99% of fracture cases**.
 - **Cause**: Severe class imbalance and limited features
 - **Next Steps**: Address imbalance with SMOTE or class weighting, and add clinical features like bone density or fall history.
